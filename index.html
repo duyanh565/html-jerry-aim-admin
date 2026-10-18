@@ -138,7 +138,7 @@
     </div>
     <div class="login-box" id="resetBox" style="display:none;margin-top:12px;border-color:#f87171;">
       <h3><i class="fa-solid fa-key"></i> Đặt lại mật khẩu</h3>
-      <div class="field-label">Mã reset (cấu hình RESET_SECRET trên VPS)</div>
+      <div class="field-label">Mã reset (đặt trong Railway Variables)</div>
       <input class="field-input" type="password" id="resetToken" placeholder="RESET_SECRET">
       <div class="field-label">Mật khẩu mới</div>
       <input class="field-input" type="password" id="resetPass" placeholder="Ít nhất 6 ký tự" onkeydown="if(event.key==='Enter')doReset()">
@@ -286,7 +286,7 @@
 <script>
 (function(){
   var _at=null,_rt=null,_filter='all',_extendTarget=null,_deleteTarget=null,_devicesTarget=null;
-  var API='/api';
+  var API='https://hardcover-lonely-financing-circulation.trycloudflare.com/api';
 
   function authHeader(){return{'Authorization':'Bearer '+_at,'Content-Type':'application/json'};}
 
